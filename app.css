@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body{
+  font-family: Open Sans, sans-serif;
+  color:#ffff;
+
+}
+.container{
+  padding-top:30px;
+  max-width:800px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+#logo{
+  margin: 0 auto;
+  background-image: url("https://en.wikipedia.org/static/images/project-logos/enwiki.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 135px;
+  height:155px;
+}
+
+.searchform{
+  margin-top: 6px;
+}
+
+.searchform input{
+  border-radius: 5px;
+  border: #a9a9a9 1px solid;
+  width:150px;
+  padding:5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.searchform input:focus{
+  box-shadow: 0 0 1pt 1pt #a9a9a9;
+  outline: none;
+  width: 300px;
+  padding:10px;
+}
+.random{
+  font-size: 12px;
+  color: #888;
+}
+#results{
+  text-align:left;
+}
+
+#results a{
+  color: #5f5f5f;
+  text-decoration: none;
+}
+
+#results a:hover{
+  color: black;
+}
+
+#results a:hover span::before{
+  color: orange;
+}
+
+#results li{
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+#results span{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+#results span::before{
+  content: '+ ';
+  font-size:13px;
+}
+#loader{
+  margin-top:20px;
+  display: none;
+}
